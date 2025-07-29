@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scales=1.0">
+        <title>btvn 1- buoi 3</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body> 
+        <div class="box">
+            <h1>Đăng nhập</h1>
+            <form>
+                <label for="username">Tên đăng nhập</label><br />
+                <input type="text" id="username" name="username" placeholder="Email hoặc số điện thoại"/><br />
+                <label for="password">Mật khẩu</label><br />
+                <input type="password" id="password" name="password" placeholder="Mật khẩu" /><br />
+                <button type="button" onclick="anHien()" style="cursor:pointer">👁</button>
+                <a href="#" class="QuenMK">Quên mật khẩu?</a>
+                <script>
+                    function anHien(){
+                        const pw = document.getElementById("password");
+                        pw.type= (pw.type === "password" ? "text":"password")
+                    }
+                </script><br>
+                <button class="dangNhap" type="button" style="cursor:pointer">Đăng nhập</button>
+                <p>Chưa có tài khoản? <a href="#" class="DangKi">Đăng kí ngay</a></p>
+                
+            </form>
+        </div>
+    </body>
+</html>
